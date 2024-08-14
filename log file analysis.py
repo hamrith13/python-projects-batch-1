@@ -3,7 +3,7 @@ from collections import defaultdict
 
 ip_pattern = re.compile(r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b')
 timestamp_pattern = re.compile(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}')
-error_pattern = re.compile(r'ERROR (\w+):')  # Updated to capture error type
+error_pattern = re.compile(r'ERROR (\w+):')  
 
 error_count = defaultdict(int)
 
